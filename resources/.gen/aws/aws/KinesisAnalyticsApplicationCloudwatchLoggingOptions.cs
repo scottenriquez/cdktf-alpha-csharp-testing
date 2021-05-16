@@ -1,0 +1,26 @@
+using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace aws
+{
+    #pragma warning disable CS8618
+
+    [JsiiByValue(fqn: "aws.KinesisAnalyticsApplicationCloudwatchLoggingOptions")]
+    public class KinesisAnalyticsApplicationCloudwatchLoggingOptions : aws.IKinesisAnalyticsApplicationCloudwatchLoggingOptions
+    {
+        [JsiiProperty(name: "logStreamArn", typeJson: "{\"primitive\":\"string\"}", isOverride: true)]
+        public string LogStreamArn
+        {
+            get;
+            set;
+        }
+
+        [JsiiProperty(name: "roleArn", typeJson: "{\"primitive\":\"string\"}", isOverride: true)]
+        public string RoleArn
+        {
+            get;
+            set;
+        }
+    }
+}

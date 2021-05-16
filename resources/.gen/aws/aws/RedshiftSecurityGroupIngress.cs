@@ -1,0 +1,34 @@
+using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace aws
+{
+    [JsiiByValue(fqn: "aws.RedshiftSecurityGroupIngress")]
+    public class RedshiftSecurityGroupIngress : aws.IRedshiftSecurityGroupIngress
+    {
+        [JsiiOptional]
+        [JsiiProperty(name: "cidr", typeJson: "{\"primitive\":\"string\"}", isOptional: true, isOverride: true)]
+        public string? Cidr
+        {
+            get;
+            set;
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "securityGroupName", typeJson: "{\"primitive\":\"string\"}", isOptional: true, isOverride: true)]
+        public string? SecurityGroupName
+        {
+            get;
+            set;
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "securityGroupOwnerId", typeJson: "{\"primitive\":\"string\"}", isOptional: true, isOverride: true)]
+        public string? SecurityGroupOwnerId
+        {
+            get;
+            set;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Package Identification -->
+    <Description>aws</Description>
+    <PackageId>aws</PackageId>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageVersion>0.0.0</PackageVersion>
+    <!-- Additional Metadata -->
+    <Authors>generated@generated.com</Authors>
+    <Language>en-US</Language>
+    <ProjectUrl>http://generated</ProjectUrl>
+    <RepositoryUrl>http://generated</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <!-- Build Configuration -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <Nullable>enable</Nullable>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aws-0.0.0.tgz" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.JSII.Runtime" Version="[1.29.0,2.0.0)" />
+    <PackageReference Include="HashiCorp.Cdktf" Version="[0.3.0]" />
+    <PackageReference Include="Constructs" Version="[3.3.75]" />
+  </ItemGroup>
+  <PropertyGroup>
+    <!-- Silence [Obsolete] warnings -->
+    <NoWarn>0612,0618</NoWarn>
+    <!-- Treat warnings symptomatic of code generation bugs as errors -->
+    <WarningsAsErrors>0108,0109</WarningsAsErrors>
+  </PropertyGroup>
+</Project>
+
